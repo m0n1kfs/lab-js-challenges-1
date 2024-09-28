@@ -1,4 +1,5 @@
 // Iteration 1 | Count Repetition
+
 const repeatedWords = [
   "machine",
   "matter",
@@ -13,14 +14,34 @@ const repeatedWords = [
   "matter"
 ];
 
-function howManyTimes() {}
-
+function howManyTimes(repeatedWords, wordToSearch) {
+  let count = 0;
+  for (let i = 0; i < repeatedWords.length; i++) {
+    const repeatedWord = repeatedWords[i];
+    if (repeatedWord === wordToSearch){
+      count++;
+    }
+  }
+  return count;
+}
+const result = howManyTimes (repeatedWords, "matter");
 
 
 
 // Iteration 2 | Number Sequence
-function createSequence() {}
+/*Declare a function named `createSequence`. 
+The function should take one argument: a number (`n`). The function should return an array of numbers in the range from `0` to `n`.*/
 
+function createSequence(n) {
+  if (n === 0) {
+    return [];
+  }
+  let arr = [];
+  for (let i = 0; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
 
 
 
