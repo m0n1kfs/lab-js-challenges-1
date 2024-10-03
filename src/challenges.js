@@ -29,8 +29,6 @@ const result = howManyTimes (repeatedWords, "matter");
 
 
 // Iteration 2 | Number Sequence
-/*Declare a function named `createSequence`. 
-The function should take one argument: a number (`n`). The function should return an array of numbers in the range from `0` to `n`.*/
 
 function createSequence(n) {
   if (n === 0) {
@@ -38,27 +36,38 @@ function createSequence(n) {
   }
   let arr = [];
   for (let i = 0; i <= n; i++) {
-    arr.push(i);
+    arr.push(i);         // ¿Por qué va bien con () y no []?
   }
   return arr;
 }
 
 
-
 // Iteration 3 | Multiply for Each
+
 const numbers = [1, 2, 5, 10, 13, 50];
 
-function multiplyBy() {}
-
-
+function multiplyBy(numbers, multiplier) {
+  if (!numbers || numbers.lenght = 0) {
+    return [];
+  }
+  let array = [];
+  for (let i = 0; i < numbers.length; i++) {
+    newArray [i] = array[i] * multiplier;
+  }
+return newArray;
+}
 
 
 // Iteration 4 | Filter Out
 const original = ["cat", "dog", "fish", "bird", "cat", "fish"];
 const toRemove = ["cat", "dog"];
 
-function filterOut() {}
+function filterOut(original, toRemove) {
+  return original.filter(item => !toRemove.includes(item));
+}
 
+const filteredArray = filterOut(original, toRemove);
+console.log(filteredArray); // Output: ["fish", "bird", "fish"]
 
 
 
