@@ -41,7 +41,6 @@ function createSequence(n) {
   return arr;
 }
 
-
 // Iteration 3 | Multiply for Each
 
 const numbers = [1, 2, 5, 10, 13, 50];
@@ -86,8 +85,17 @@ const duplicateWords = [
   "bring"
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(arr) {
+  let uniqueArr = [];
+  for (let word of arr) {
+    if (!uniqueArr.includes(word)) {
+      uniqueArr.push(word);
+    }
+  }
+  return uniqueArr;
+}
 
+console.log(uniquifyArray(duplicateWords));
 
 
 
